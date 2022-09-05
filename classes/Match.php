@@ -4,18 +4,20 @@ namespace classes;
 
 class Match{
 
-    protected $attack;
-    protected $defense;
-    protected $keeper;
 
-    public function __construct()
+    private $playerList;
+    public function __construct(Array $players)
     {
-        $this->attack  = new Attack();
-        $this->defense = new Defense();
-        $this->keeper  = new Keeper();
+        $this->playerList = $players;
     }
 
     public function start(){
-        echo "Start Play";
+        echo "Start Match";
+        echo "\n";
+
+        foreach ($this->playerList as $player){
+            $player->play();
+            echo "\n";
+        }
     }
 }
