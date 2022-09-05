@@ -1,0 +1,21 @@
+{
+    "name": "amr.elsaeed/solid-principle",
+    "description": "SOLID in PHP examole",
+    "autoload": {
+        "psr-4": {
+            "AmrElsaeed\\SolidPrinciple\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amrkahla6",
+            "email": "amr.elsaeed@almotahidaeducation.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "classes\\": "classes"
+        }
+    }
+}
